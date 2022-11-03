@@ -41,7 +41,7 @@ public class EncuestaCondicionales {
        System.out.println("opínion negativa");
       }
     else if (opinion == 0){
-      System.out.println("el valor "+opinion+"no es valido");
+      System.out.println("el valor "+opinion+" no es valido");
     } 
     else {
      System.out.println("mucha calificacion");
@@ -49,5 +49,5 @@ public class EncuestaCondicionales {
     
     System.out.println("hasta la proxima");
     }
-    
+     
     }
