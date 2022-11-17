@@ -35,7 +35,7 @@ están entre el 1 y el 9.
             for (int j = 0; j < 3; j++) {
                 System.out.println("ingrese un numero para la posicion [" + i + "] , [ " + j + "]"); 
                 num= leer.nextInt();
-                if (num>1 && num<9) {
+                if (num>=1 && num<=9) {
                     matriz[i][j]=num;
                 }else{
                     System.out.println("numero incorrecto.Reingreselo.");
@@ -46,11 +46,8 @@ están entre el 1 y el 9.
 }
     public static void comprobarMatriz(int [][] matriz){
         int suma1=0 , suma2 = 0 , suma3 = 0 ;
-        for (int i = 0; i < 0; i++) {
-            for (int j = 0; j < 3; j++) {
-              suma1 += matriz[i][j];
-            }   
-        }
+       
+        System.out.println(suma1);
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
                 if (i==j) {
@@ -59,14 +56,15 @@ están entre el 1 y el 9.
                 if (i+j==2) {
                     suma3 += matriz[i][j];
                 }
-            }
-            
+            }  
         }
-        if (suma1==suma2 && suma1==suma3) {
+        System.out.println(suma2);
+        if (suma2 ==suma3) {
             System.out.println("la matriz es magica");
         }else{
         System.out.println("la matriz no es magica");
         }
+        System.out.println(suma3);
     }
 }
 

@@ -31,7 +31,7 @@ public class ejercicio13 {
         
         for (fila = 0; fila <= n-3; fila++) {
             aux+="*";
-             //System.out.println("*");
+             
             for (col = 0; col<=n-3; col++) {
                 aux += " ";
                 //System.out.print("o"); 

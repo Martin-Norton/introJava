@@ -20,6 +20,11 @@ public class ejercicio11manosalaobra {
         Scanner leer=new Scanner(System.in);
         System.out.println("ingrese una frase terminada en punto");
         String frase = leer.nextLine();
+       String newFrase2=cambiarFrase(frase);
+        System.out.println(newFrase2);
+    }
+    public static String cambiarFrase(String frase){
+    
         int largo = frase.length();
         String newFrase="", newFrase2="";
         for (int i = 0; i < largo; i++) {
@@ -43,7 +48,6 @@ public class ejercicio11manosalaobra {
                   newFrase2 += frase.substring(i,i+1);
         }                            
     }
-         System.out.println(newFrase2);
+        return newFrase2;
     }
-    
 }
